@@ -6,6 +6,6 @@ $ npm install
 ```
 ## Running
 ```
-$ cd blod
+$ cd blog
 $ strapi develop
 ```
