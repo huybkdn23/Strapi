@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "auth",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "birth_day": {
+      "type": "date"
+    },
+    "email": {
+      "unique": true,
+      "required": true,
+      "type": "email"
+    },
+    "password": {
+      "required": true,
+      "type": "password"
+    },
+    "books": {
+      "model": "book",
+      "via": "writtenBy"
+    }
+  }
+}

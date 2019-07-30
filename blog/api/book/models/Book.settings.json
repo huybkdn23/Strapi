@@ -1,0 +1,29 @@
+{
+  "connection": "default",
+  "collectionName": "book",
+  "info": {
+    "name": "book",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "default": "Book",
+      "required": true,
+      "type": "string"
+    },
+    "type": {
+      "required": true,
+      "type": "string"
+    },
+    "writtenBy": {
+      "model": "auth",
+      "via": "books"
+    }
+  }
+}
